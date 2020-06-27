@@ -1,0 +1,283 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&display=swap');
+
+html {
+    margin: 0px;
+	padding: 0px;
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	font-family: 'DM Mono', monospace;
+	font-size: 20px;
+	margin: 0px;
+	padding: 0px;
+	background-color: #000;
+	color: white;
+	height: 100%;
+	width: 100%;
+	margin-top: 0px;
+	padding-top: 0px;
+	overflow: hidden; 
+	text-shadow: 0 0 4px rgba(255, 255, 255, 0.536);
+
+	background-color: black;
+  background-image: radial-gradient(
+    rgb(33, 33, 33), black 120%
+  );
+  height: 100vh;
+}
+
+#container {
+	margin: auto;
+	height: 90vh;
+	margin-top: 5vh;
+	margin-bottom: 5vh;
+	width: 60%;
+	
+}
+
+#interface {
+    display: block;
+	margin: auto;
+	margin-top: 0px;
+	padding-top: 0px;
+}
+
+#chat {
+	display: block;
+	animation: appear 1s;
+}
+
+#talk-form {
+	display: block;
+	background: none;
+	width: 100%;
+	margin: auto;
+	margin-top: 0px;
+	padding-top: 0px;
+	animation: appear 1s;
+}
+
+
+/*TEXT FIELDS*/
+.talk-field,
+.username-field,
+.description-field {
+	display: inline-block;
+	border: none;
+	outline: none;
+	font-family: 'DM Mono', monospace;
+	font-size: 20px;
+	width: 90%;
+
+	background:none;
+
+	margin-top: 0px;
+	padding-top: 0px;
+
+}
+
+.prompt {
+	display: inline-block;
+	
+}
+
+::placeholder {
+
+}
+
+.talk-field,
+.username-field,
+.prompt,
+.description-field,
+::placeholder {
+	  color: grey;
+text-shadow: 0 0 4px rgba(128, 128, 128, 0.8);
+}
+
+#title {
+	color: grey;
+	text-shadow: 0 0 4px rgba(128, 128, 128, 0.8);
+	text-align: left;
+}
+
+#header {
+	font-family: monospace;
+	white-space: pre;
+	font-size: 20px;
+}
+
+
+.username-error-message {
+	font-size: 20px;
+	color: #ff004d;
+	text-shadow: 0 0 3px #ff004d;
+}
+
+
+.talk-button,
+.username-button {
+	/*
+	font-size: 30px;
+	margin: 0px;
+	display: inline-block;
+	border: none;
+	text-align: center;
+	color: white;
+    background: #ff004d;
+    outline: none;
+	cursor: pointer;
+  	padding-top: 4px;
+	padding-bottom: 4px;
+	padding-left: 16px;
+	padding-right: 16px;
+	*/
+	margin-top: 0px;
+	padding-top: 0px;
+	
+}
+
+.talk-button:active,
+.user-button:active {
+    background: #ff77a8;
+}
+
+.passageBody {
+	animation: appear 1s;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+.passageLink, .functionLink {
+	color:rgb(19, 134, 176);
+	text-decoration: none;
+	/*animation: passageLinkFade 5s;
+	animation-iteration-count: initial;*/
+	text-shadow: 0 0 3px rgba(19, 134, 176, 0.8);
+}
+
+.passageLink:hover,.functionLink:hover {
+	color:rgb(132, 235, 255);
+	text-decoration: none;
+	text-shadow: 0 0 3px rgba(132, 235, 255, 0.8);
+	
+}
+
+
+.specialLink {
+	color:rgb(73, 136, 9);
+	text-decoration: none;
+	/*animation: passageLinkFade 5s;
+	animation-iteration-count: initial;*/
+	text-shadow: 0 0 3px rgba(73, 136, 0.8);
+}
+
+.specialLink:hover {
+	color:rgb(122, 213, 32);
+	text-decoration: none;
+	text-shadow: 0 0 3px rgba(122, 213, 32, 0.8);
+	
+}
+@keyframes passageLinkFade {
+  0% {
+    color: #fff;
+  }
+  100% {
+	color:rgb(19, 134, 176, 0.8); 
+	
+  }
+}
+
+
+.externalLink {
+	color:#ff004d;
+	text-decoration: none;
+	text-shadow: 0 0 3px #ff004dcb;
+}
+
+
+.externalLink:hover {
+	color:#ff77a8;
+	text-decoration: none;
+	text-shadow: 0 0 3px #ff77a9cb;
+}
+
+.lowKeyLink {
+	color:#ffc8dc;
+	text-decoration: none;
+	text-shadow: 0 0 3px #ffc8dc;
+	text-decoration: none;
+}
+
+.lowKeyLink:hover {
+	color:#ffecf3;
+	text-decoration: none;
+	text-shadow: 0 0 3px #ffecf3;
+	text-decoration: none;
+}
+
+
+.nameLink.enabled  {
+	color: #ffa300;
+	text-decoration: none;
+	text-shadow: 0 0 4px #ffa300;
+}
+
+.nameLink.enabled:hover  {
+	color: #ffc522;
+	text-decoration: none;
+	text-shadow: 0 0 4px #ffc522;
+}
+
+.nameLink.afk  {
+	color: #988f6a;
+	text-decoration: none;
+	text-shadow: 0 0 4px #988f6a;
+}
+
+.nameLink.afk:hover  {
+	color: #aea06a;
+	text-decoration: none;
+	text-shadow: 0 0 4px #aea06a;
+}
+
+
+.nameLink.me  {
+	color: #a25707;
+	text-decoration: none;
+	text-shadow: 0 0 2px #a25707;
+}
+
+
+.nameLink.disabled  {
+	color: #a25707;
+	text-decoration: none;
+	cursor: default;
+	text-shadow: 0 0 2px #a25707;
+}
+
+.myName {
+	color:#CCC;
+}
+
+.action {
+	font-style: italic;
+	color:rgb(113, 113, 113);
+	text-shadow: 0 0 4px rgb(113, 113, 113);
+}
+
+.whisper {
+	color: rgb(186, 186, 186);
+	text-shadow: 0 0 4px rgba(186, 186, 186, 0.8);
+}
+
+

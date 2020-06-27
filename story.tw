@@ -1,0 +1,175 @@
+﻿:: nested [backyard]
+The telescope is made of paper-mache and full of crooked levers and dials as though it was designed by child astronomers.
+
+Play [[Nested by Orteil>>$name looks into the telescope|http://orteil.dashnet.org/nested?seed=universe]]. 
+
+[[Keep looking around|backyard]].
+
+
+:: Start
+{comment|This intro passage is called only once, you can't go back to this point}
+It's a warm summer evening, so you just couldn't waste it at home. You are standing in front of LIKELIKE, a kind of arcade for grown ups. It's a big garage decorated with a colorful mural; it doesn't look like a legit art gallery but it's the only venue throwing parties while the pandemic level is still on yellow.
+You've heard there may be some outbreaks of [[language viruses|virus]] in the area, {healthy|but you decided to take a risk. 
+[[You just have to be cautious>>$name enters LIKELIKE|likelike]]}
+{virus|shouty|but you've been isolating for an eternity. Now you just need to be in a loud space and SCREAM from the top of your lungs.
+[[ENTER LIKELIKE.>>$name enters LIKELIKE|likelike]]}
+{virus|valley|but like, whatever...
+[[Enter LIKELIKE.>>$name enters LIKELIKE|likelike]]}
+{virus|endearing|but you are missing your dear friends so so much. 
+[[Enter LIKELIKE.>>$name enters LIKELIKE|likelike]]}
+{virus|insecurity|but you are questioning pretty much everything these days??
+[[Enter LIKELIKE?>>$name enters LIKELIKE|likelike]]}
+{virus|singing|but you feel stupid and contagious.
+Here we are nooooow, [[entertaaaaain us!>>$name enters LIKELIKE|likelike]]}
+
+
+:: virus
+We don't really know when the language viruses started. At first they were mistaken for ordinary conversational fads: teens have been patronized by countless op-eds, social media has been blamed for killing standard English. Then older people started to catch them.
+Luckily the effect of the viruses don't last long, but they are very contagious and can create rather {back|awkward situations...}
+
+
+:: backyard [backyard]
+The backyard is as big as the gallery, but much quieter. It's a cozy space enclosed by privacy fences and lit by string lights. {passagePlayers|daybed|There is an outdoor [[daybed>>$name sits on the daybed|daybed]] waiting to be used|$name is slouching on an outdoor [[daybed>>$name sits on the daybed|daybed]]|$list are slouching on an outdoor [[daybed>>$name piles on the daybed|daybed]]}, {passagePlayers|dog|a [[dog>>$name approaches the dog|dog]] is napping under a mulberry tree|$name is petting a very relaxed [[dog>>$name approaches the dog|dog]]|$list are petting a very relaxed [[dog>>$name approaches the dog|dog]]}.
+An odd looking [[telescope>>$name examines the telescope|nested]] is pointed at the starry sky.
+It's nice out here but you may be missing the real party [[inside>>$name enters LIKELIKE|likelike]].
+
+
+:: StoryTitle
+Untitled Story
+
+
+:: daybed [backyard]
+You sit back on the daybed{passagePlayers|daybed|| with $name| with $list}. Looking up at the stars, you can almost smell the metallic-sweet scent of space mixing with fresh cut grass, and a waft of weed smoke from outside the fence.
+[[Enough chilling>>$name leaves the daybed|backyard]].
+
+
+:: basement [basement]
+You push the heavy door and walk down the stairs. The basement is decorated like a dungeon as imagined by a teenager, with plastic skeletons and fake spiderwebs. In the middle of the candle-lit room there is a pillow fort made of couch cushions, quilts and blankets. {passagePlayers|fort||$name is looking inside.|$list are looking inside.}
+[[Peek inside>>$name peeks inside the fort|fort]] or [[go back upstairs>>$name emerges from the basement|likelike]]
+
+
+:: fort [basement]
+The fort is surprisingly roomy. Looming on a vaguely satanic shrine is an old personal computer, the Commodore 666.
+Dice of all shapes, character sheets, and intricate miniatures are scattered on the floor. {passagePlayers|dungeon|You feel like the computer is the boss here.|$name is intently typing on the keyboard.|$list are playing a sort of roleplaying game with the machine.}
+Should you [[interact with the computer>>$name enters the fort|dungeon]] or [[get out of here>>$name leaves the basement|likelike]]?
+
+
+:: dungeon [basement]
+Play [[AI Dungeon by Nick Walton>>$name starts playing AI dungeon|https://play.aidungeon.io/]]. 
+Instructions: create a free account and let a sophisticated AI be your game master.
+
+[[Go back to the party.>>$name emerges from the basement|likelike]]
+
+
+:: dog [backyard]
+The tag on the collar reads "Harvey". He's a medium-sized dog that may share some, but not too many, genes with a German Shepherd.  He raises an eyebrow at you expectantly and his tail goes thump-thump on the roots of the tree.
+{function|Pet the dog|pet|} or [[leave the dog alone|backyard]].
+
+
+:: StoryAuthor
+Anonymous
+
+
+:: dance [dancefloor]
+You dance convulsively to the algorithmically generated beats.
+
+[[Stop dancing>>$name stops dancing|dancefloor]].
+
+
+:: cabinet [cabinet]
+It's an angular, contemporary-looking arcade cabinet. The marquee reads "Queers in Love at the End of the World". {passagePlayers|queers|Nobody is playing, |$name is playing, |$list are playing together, }{passagePlayers|cabinet||$name is just watching,|$list are just watching, } it looks like a fast and intense game.
+[[Play|queers]] or [[leave>>$name walks away from the cabinet|likelike]].
+
+
+:: injectTest
+This is an injection. {passage|inception}
+
+
+:: likelike [likelike]
+LIKELIKE is a dark, featureless room of about 20 by 20 feet. LED spotlights slowly fade from purple to blue, highlighting different areas. {roomPlayers|likelike|Nobody is in sight.||}
+On the wall next to the entrance there is a [[vinyl text>>$name reads the wall text|wallText]] about the current exhibition. {roomPlayers|dancefloor|One side of the venue appears to be a [[dancefloor>>$name steps into the danceloor|dancefloor]] but nobody is dancing|One side of the venue appears to be a [[dancefloor>>$name steps into the danceloor|dancefloor]] but only one person is dancing|A group of people is hanging out on what looks like a small [[dancefloor>>$name steps into the danceloor|dancefloor]]}.
+{roomPlayers|cabinet|There is an [[arcade cabinet>>$name walks to the arcade cabinet|cabinet]] in the corner,|Somebody is at the [[arcade cabinet>>$name walks to the arcade cabinet|cabinet]] in the corner,|Some people are clustered around an [[arcade cabinet>>$name walks to the arcade cabinet|cabinet]] in the corner,} the only evident trace of videogames here.
+{roomPlayers|table|A [[refreshment table>>$name walks to the refreshment table|table]] appears criminally ignored|A visitor is checking out the [[refreshments table>>$name walks to the refreshment table|table]]|A few visitors are checking out the [[refreshment table>>$name walks to the refreshment table|table]]}.
+You can see an exit to the [[backyard>>$name walks to the backyard|backyard]] and an ancient [[wooden door>>$name descends into the basement|basement]] that leads to a basement. Of course, you can always check your [[phone>>$name checks $their phone|phone]]{roomPlayers|likelike|| or chat with $name who is standing next to you| or chat with $list who are standing next to you}.
+
+
+:: phone [likelike]
+You pull out your phone, which gives off the faint scent of musk, sweat, and pizza. No new messages, decent reception. A tiny icon signals a work-related notification. Due to the quarantine you've been working from home, which means you are never completely off the hook. You can check your [[work app|HumanErrors]] or [[go back to the real world.>>$name stopped looking at $their phone.|likelike]]
+
+
+:: queers [cabinet]
+As you lay your hands on the controls, you feel a tender caress on the back of your neck, though no one is behind you. Play [[Queers in Love at the End of the World by anna anthropy>>$name starts playing the Queers in Love|https://w.itch.io/end-of-the-world]]
+
+[[Go back to the party.>>$name walks away from the cabinet|likelike]]
+
+
+:: ballroom [dancefloor]
+Play [[The Ballroom by Liza Daly>>$name imagines ballrooms across time and space|https://lizadaly.com/projects/the-ballroom/]]. 
+
+[[Stop thinking and keep partying|dancefloor]].
+
+
+:: dancefloor [dancefloor]
+You enter a circle of speakers diffusing moderately loud algotronica.
+A matrix of symbols and characters is projected on the wall. You realize it's the interface of the software producing the beats. Asterisks and dotted lines flicker across the screen triggering elaborate patterns of syntetic tones and microsamples. It's hard to tell if there is a human live-coding the music of if it's randomly generated.
+It's an acquired taste. You wonder what [[previous generations>>$name is lost in thoughts|ballroom]] would think about this unpredictable music.
+{passagePlayers|dancefloor||$name is standing on the sidelines next to you|$list are standing on the sidelines bobbing their heads.}
+You can {passagePlayers|dance|try to [[dance>>$name starts dancing|dance]] alone|[[dance>>$name starts dancing|dance]] with $name|[[dance>>$name starts dancing|dance]] with $list} or check out the [[rest of the venue>>$name left the dancefloor|likelike]].
+
+
+:: inception
+--- and a injection inside an injection ---
+
+
+:: HumanErrors [likelike]
+You open the work app. You just started the job at Regulate and  want to give a good impression. Quality Assurance is not the most fashionable job in tech, but there aren't many jobs out there.
+
+Play [[Human Errors by Katherine Morayati|https://sub-q.com/play-human-errors/]] or [[ignore work for now>>$name stopped looking at $their phone.|likelike]].
+
+
+:: wallText [likelike]
+The neatly arranged text on the wall might be the most official-looking part of this makeshift art gallery. It reads:
+<div style="text-align:center;">
+LIKELIKE Presents:
+The end of the word as we know it
+An exhibition of works pushing at the boundaries of interactive fiction.
+
+Works by: Liza Daly /// Orteil /// Katherine Morayati /// 
+Nick Walton /// anna anthropy /// Al Donato
+Exhibition by: Paolo Pedercini /// Heather Kelley /// Jim Munroe
+
+</div>
+[[Cool.|likelike]]
+
+
+:: naloxone [table]
+It's a really peculiar brochure.
+
+Play [[Administer Naloxone by Gollydrat>>$name reads a brochure|https://texturewriter.com/play/gollydrat/naloxone]]. 
+Instructions: drag and drop the words at the bottom.
+
+[[Go back to the party.>>$name puts the brochure back on the table|table]]
+
+
+:: table [table]
+Snacks!  Drinks!  You see some paper cups with a pale bubbly [[drink>>$name drinks a glass of Champagne|champagne]], some flourescent orange [[puffs>>$name eats a cheesepuff|cheesepuffs]] in bowls, and a tray of what looks like very small sugar [[candies|colorpills]].
+Somebody left a few [[brochures|naloxone]] about opioid overdoses on the table. {roomPlayers|table||$name is perusing the refreshments too.|$list are perusing the refreshments too.}
+[[Keep exploring the venue>>$name is looking around awkwardly|likelike]].
+
+
+:: colorpills [table]
+Scattered on a tray are a few small pastel colored... candies?  A hand written card on the tray says 'take ONE' which is strange, since they are so small.
+
+{function|Eat one|candy|} or [[skip it for now|table]].
+
+
+:: champagne [table]
+You pick up a paper cup with some pale effervescent liquid in it.  As you sip it, the tiny bubbles go up your nose and you almost sneeze.  You were expecting something sweet but it's actually pretty good stuff.  French?  A faint sound of harpsicord music floats past your ears.
+[[See what else is on the table.>>$name checks out the snacks on the table|table]]
+
+
+:: cheesepuffs [table]
+The table holds three large bowls full of flourescent orange cheesepuffs of different types.  Round airy ones, lumpy extruded ones with an extra reddish tinge, and the tubular type are all here. Picking your favorite, you salivate as the salty cheesy coating as it melts in your mouth, until the processed corn starch lodges in your teeth. Your fingers are a mess.
+[[Eventually, you stop yourself from taking yet another one.|table]]
+
+

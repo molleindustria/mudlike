@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>LIKELIKE Online: The end of the Word as we know it</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <meta name="title" content="LIKELIKE Online: The end of the Word as we know it" />
+    <meta name="description" content="An online exhibition of text games." />
+
+    <!-- SEO / social media-->
+    <meta name="author" content="LIKELIKE" />
+    <meta name="copyright" content="LIKELIKE" />
+    <meta name="robots" content="index, follow" />
+    <meta name="description" content="An online exhibition of text games." />
+    <meta name="keywords" content="Game,Art,Molleindustria,videogame" />
+
+    <meta property="og:image" content="https://molleindustria.org/images/endoftheword.png" />
+    <meta property="og:title" content="LIKELIKE Online: The end of the Word as we know it" />
+    <meta property="og:description" content="An online exhibition of text games." />
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@likelikearcade" />
+    <meta name="twitter:creator" content="@likelikearcade" />
+    <meta name="twitter:title" content="LIKELIKE Online: The end of the Word as we know it" />
+    <meta name="twitter:description" content="An online exhibition of text games." />
+    <meta name="twitter:image" content="https://molleindustria.org/images/endoftheword.png" />
+
+
+
+    <!-- load socket and the client -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+
+    <script defer src="client.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+
+</head>
+
+<body>
+    <div id="container">
+
+        <div>
+            <pre id="header">
+             ___              ___ 
+|    | |__/ |__  |    | |__/ |__  
+|___ | |  \ |___ |___ | |  \ |___ 
+            </pre>
+        </div>
+
+        <div id="title"></div>
+        <div id="passage">
+        </div>
+
+        <div id="chat">
+        </div>
+
+        <div id="interface">
+
+            <div id="username-form" style="display: none;">
+                <div id="username-message">What's your name?</div>
+                <form action="" onsubmit="return nameOk()">
+                    <div class="prompt">> </div><input id="username-field" class="username-field"
+                        placeholder="Type your nickname" maxlength="16" autocomplete="off" autocorrect="off"
+                        autocapitalize="off" spellcheck="false" name="lastpass-disable-search" />
+                </form>
+                <div id="username-error" class="username-error-message"></div>
+
+                <!--<button class="username-button" type="button" onclick="nameOk();">JOIN</button>-->
+            </div>
+
+
+            <div id="pronouns" style="display: none;">
+                <div id="pronouns-message">What's your pronoun?</div>
+                <a href="#" class='passageLink' onclick="pronounOk('they'); return false; ">They/them</a> -
+                <a href="#" class='passageLink' onclick="pronounOk('she'); return false; ">She/her</a> -
+                <a href="#" class='passageLink' onclick="pronounOk('he'); return false; ">He/him</a>
+            </div>
+
+            <div id="description-form" style="display: none;">
+                <div id="description-message">Description</div>
+                <form action="" onsubmit="return descriptionOk()">
+                    <div class="prompt">> </div><input id="description-field" class="description-field"
+                        placeholder="Type your your description" maxlength="200" autocomplete="off" autocorrect="off"
+                        autocapitalize="off" spellcheck="false" name="lastpass-disable-search" />
+                </form>
+
+            </div>
+
+            <form id="talk-form" action="" onsubmit="return getTalkInput()" style="display: none;">
+                <div class="prompt">> </div><input id="talk-field" class="talk-field" placeholder="" maxlength="60"
+                    spellcheck="false" autocomplete="off" name="lastpass-disable-search" />
+                <!-- call the function below on button press-->
+                <!--<button class="talk-button" type="button" onclick="getTalkInput();">TALK</button>-->
+            </form>
+
+
+        </div>
+    </div>
+
+</body>
+
+</html>
