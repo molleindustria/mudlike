@@ -2,15 +2,15 @@
 
 A multiplayer text environment used in [LIKELIKE](http://likelike.org)'s online exhibition *The end of the WORD as we know it*. 
 
-A running (hopefully) instance of this repository can be found at (https://likeliketext.glitch.me/)
+A running (hopefully) instance of this repository can be found at [https://likeliketext.glitch.me/](https://likeliketext.glitch.me/)
 
 MUDLIKE is a mashup of a [Twine](https://twinery.org/) game and a multi room chat. 
-Unlike the classic [Multi User Dungeons](https://en.wikipedia.org/wiki/MUD) MUDLIKE doesn't use a parser. Actions and movements are activated through hyperlinks.
+Unlike the classic [Multi User Dungeons](https://en.wikipedia.org/wiki/MUD), MUDLIKE doesn't use a parser. Actions and movements are activated through hyperlinks.
 MUDLIKE is not a beginner friendly tool like Twine. In order to use this codebase you need to know javascript and node.js.
 
 ## Technology
 MUDLIKE uses node.js, express, and socket.io on the server side and plain html on the client side. 
-It is built to be deployed on [Glitch](https://glitch.com/) but it can be adapted to other node.js enabled server.
+It is built to be deployed on [Glitch](https://glitch.com/) but it can be adapted to other node.js enabled platforms.
 
 ## Structure
 
@@ -20,8 +20,8 @@ It is built to be deployed on [Glitch](https://glitch.com/) but it can be adapte
 For example in *The end of the WORD as we know it* users can contract language viruses that modify their speech. The viruses can be transmitted from player to player and their effect last a couple of minutes. All the virus logic is contained in game.js.
 This file also contains a series of functions called upon certain game events, such as player initialization.
 
-**story.tw** (you can change its name in the game settings) is the hypertext part at the top. It's parsed from a twee file which can be exported from [Twine](https://twinery.org/) 1.4.2 (Important: the more recent Twine 2 doens't have a built-in .tw exporter, so you shouldn't use that).
-Each passage can have a chatroom associated to it. Multiple passages can share the same chatroom. A "room" is conceptually a space where users can hear each other.
+**story.tw** (you can change its name in the game settings) is the hypertext part at the top. It's parsed from a twee file which can be exported from [Twine](https://twinery.org/) 1.4.2 (Important: the more recent Twine 2 doesn't have a built-in .tw exporter, so you shouldn't use that).
+Each passage can be associated to a chatroom. Multiple passages can share the same chatroom. A chatroom is conceptually a space where users can hear each other.
 
 **client.js, index.html, style.css** only take care of the visual *presentation* of the story, there is almost no content in them. 
 
@@ -43,7 +43,7 @@ In the example:
 `[[vinyl text>>$name reads the wall text|wallText]]` 
 
 **vinyl text** is the text of the link.
-What follows **>>** is the message sent to all the other people in the room when the link is clicked. $name will be replace by the user nickname.
+What follows **>>** is the message sent to all the other people in the room when the link is clicked. $name will be replaced by the user nickname.
 **wallText** is the id of the destination passage
 
 ## roomPlayers
@@ -84,8 +84,8 @@ Creates a link that triggers a custom function.
 
 **Glitch** is a community and a suite of online tools to develop web applications.
 Glitch provides free hosting for node.js projects. Most web hosts don't give you that degree of access. Another popular platform is heroku.
-Glitch offers a code editor, file storage, and an intergrated terminal. You can create node applications from scratch via browser.
-Glitch allows you to browse and remix other people projects.
+Glitch offers a code editor, file storage, and an integrated terminal. You can create node applications from scratch via browser.
+Glitch allows you to browse and remix other people's projects.
 
 This repository is already structured for glitch deployment with a server.js and a package.json on the root, and a "public" folder.
 You can deploy this app to Glitch via github or [other git repositories](https://medium.com/glitch/import-code-from-anywhere-83fb60ea4875)
@@ -109,7 +109,7 @@ Alternatively you can follow this process to deploy it starting from a zip of th
 
 ## The .env file
 
-.env is a text file in the root folder that contains private variables, in this case admin usernames and passwords and the port used by the project. It's not published on github and it's not automatically published on glitch so you may have to create it manually and/or copy paste the content in the glitch editor and/or in your code editor if you are running is as a local project.
+.env is a text file in the root folder that contains private variables, in this case admin usernames and passwords and the port used by the project. It's not published on github and it's not automatically published on glitch so you may have to create it manually and/or copy paste the content in the glitch editor and/or in your code editor if you are running as a local project.
 
 An example of .env file for LIKELIKE online is:
 
@@ -118,5 +118,5 @@ ADMINS=adminname1|pass1,adminname2|pass2
 PORT = 3000
 ```
 
-The admin names are reserved. Logging in as "adminname|pass" (nickname and password separated by a "|") will grant the user admin priviledges such as banning IP or sending special messages.
+The admin names are reserved. Logging in as "adminname|pass" (nickname and password separated by a "|") will grant the user admin privileges such as banning IP or sending special messages.
 
