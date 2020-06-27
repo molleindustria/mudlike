@@ -152,7 +152,7 @@ Instructions: drag and drop the words at the bottom.
 
 
 :: table [table]
-Snacks!  Drinks!  You see some paper cups with a pale bubbly [[drink>>$name drinks a glass of Champagne|champagne]], some flourescent orange [[puffs>>$name eats a cheesepuff|cheesepuffs]] in bowls, and a tray of what looks like very small sugar [[candies|colorpills]].
+Snacks!  Drinks!  You see some paper cups with a pale bubbly [[drink>>$name drinks a glass of Champagne|champagne]], some fluorescent orange [[puffs>>$name eats a cheesepuff|cheesepuffs]] in bowls, and a tray of what looks like very small sugar [[candies|colorpills]].
 Somebody left a few [[brochures|naloxone]] about opioid overdoses on the table. {roomPlayers|table||$name is perusing the refreshments too.|$list are perusing the refreshments too.}
 [[Keep exploring the venue>>$name is looking around awkwardly|likelike]].
 
