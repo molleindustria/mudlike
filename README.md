@@ -2,7 +2,7 @@
 
 A multiplayer text environment used in [LIKELIKE](http://likelike.org)'s online exhibition *The end of the WORD as we know it*. 
 
-A running (hopefully) instance of this repository can be found at [https://likeliketext.glitch.me/](https://likeliketext.glitch.me/)
+A running (hopefully) instance of this repository can be found at https://likeliketext.glitch.me/
 
 MUDLIKE is a mashup of a [Twine](https://twinery.org/) game and a multi room chat. 
 Unlike the classic [Multi User Dungeons](https://en.wikipedia.org/wiki/MUD), MUDLIKE doesn't use a parser. Actions and movements are activated through hyperlinks.
